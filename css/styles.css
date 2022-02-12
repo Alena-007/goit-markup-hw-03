@@ -64,6 +64,11 @@ img {
 }
 /* ========= END RESET ========= */
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -80,6 +85,19 @@ img {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0000);
+    overflow: hidden;
 }
 
 .logo {
@@ -261,11 +279,6 @@ img {
 
 /* ========= START SERVICES ========= */
 
-.services {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .services-list {
     display: flex;
     flex-wrap: wrap;
@@ -288,8 +301,6 @@ img {
 
 /* ========= START TEAM ========= */
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--secondary-background-color-light);
 }
 
@@ -316,8 +327,7 @@ img {
 }
 
 .team-wrap {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 20px;
 }
 
 .team-title {
@@ -340,11 +350,6 @@ img {
 /* ========= END TEAM ========= */
 
 /* ========= START PROJECTS ========= */
-
-.projects {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .filter-projects {
     margin-bottom: 50px;
@@ -378,6 +383,7 @@ img {
 .projects-item {
     margin-bottom: 30px;
     flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #eeeeee;
 }
 
 .projects-item:nth-last-child(-n + 3) {
@@ -390,7 +396,6 @@ img {
 
 .projects-wrap {
     padding: 20px 24px;
-    border: 1px solid #eeeeee;
 }
 
 .title-projects {
